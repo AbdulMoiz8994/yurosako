@@ -1,0 +1,55 @@
+.boxes{
+    background-color: black;
+    color: white;
+    height: 100%;
+    position: relative;
+    button{
+        
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        padding: 10px 20px;
+        svg{
+        font-size: 48px !important;
+        
+    }
+    }
+    .sidebar-ul{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 28px;
+    margin-top: 24px;
+    li{
+        font-size: 22px;
+        text-transform: uppercase;
+        
+    }
+    hr{
+        background-color: white !important;
+        width: 100% !important;
+        border: 1px solid white !important;            
+    }
+    }
+   
+}
+.social-meida-sidebar{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 10px 8px;
+
+    img{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+// .css-9mgopn-MuiDivider-root{
+//     background-color: white !important;
+//     width: 100% !important;
+//     border: 1px solid white !important;
+
+// }
