@@ -5,6 +5,7 @@ import { Header } from "../../layout";
 import { AboutYurosako } from "./about-yuk";
 import { Invisible } from "./invisble";
 import { Customization } from "./customization";
+import { Roadmap } from "./roadmap";
 import BannerCharacter from "../../assests/Header/Banner-character.webp";
 import logo from "../../assests/Header/HeaderLogo.webp";
 
@@ -42,6 +43,7 @@ export const Dashboard = () => {
         {/* Carosal Section */}
         <Invisible />
         <Customization />
+        <Roadmap />
       </div>
     </div>
   );
