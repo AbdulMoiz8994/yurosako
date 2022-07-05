@@ -20,6 +20,11 @@
       padding-left: 12px;
     }
 
+
+ .imgs img{
+    margin-left: auto;
+ }
+
     @media (max-width:500px) {
        .main-logo{
         height: 125px;
@@ -37,7 +42,7 @@
 }
   button{
     position: absolute;
-    top: 4px;
+    top: 2px;
     font-size: 24px;
     z-index: 99;
     text-transform: uppercase;
@@ -71,6 +76,52 @@
     margin: 4px auto;
    position: relative;
 }
+
+
+.yursako{
+    width: 100%;
+}
+
+.content-yuros, .content-invisible{
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;
+    column-gap: 40px;
+    // .knife, .desc{
+    //     width: 50%;
+    // }
+    .knife {
+        width: 40%;
+        img{
+            margin-left: auto;
+            max-width: 60%;
+        }
+    }
+    .desc{
+
+        width: 60%;
+        img{
+            width: 500px;
+        }
+        p{
+            letter-spacing: 0.8px;
+            margin: 10px 0px;
+        }
+    }
+}
+.content-invisible{
+    flex-direction: row-reverse;
+    .knife{
+        img{
+            margin-right: auto;
+        }
+    }
+}
+
 @media (max-width: 928px) {
   .text,
   .imgs {
@@ -79,5 +130,28 @@
   .text{
     margin-top: 40px;
   }
+  .content-yuros,.content-invisible{
+    flex-direction: column;
+    width: 100%;
+  }
+  .desc{
+    order: 1 !important;
+    width: 90% !important;
+  }
+  .knife{
+    order: 2 !important;
+    width: 50% !important;
+    margin: 10px 0px;
+    img{
+        max-width: 90% !important;
+    }
+  }
+//   .content-invisible{
+//     .knife{
+//         img{
+
+//         }
+//     }
+//   }
 }
 
