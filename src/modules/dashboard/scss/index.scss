@@ -121,6 +121,25 @@
         }
     }
 }
+.invi-desc{
+  // width: 300px;
+  overflow-y: auto;
+  height: 500px;
+}
+.invi-desc::-webkit-scrollbar{
+     width: 12px;
+  }
+  .invi-desc::-webkit-scrollbar-track{
+    border-radius: 4px;
+    background-color: black;
+  }
+  .invi-desc::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: red;
+  }
+
+
+
 
 @media (max-width: 928px) {
   .text,
@@ -146,6 +165,29 @@
         max-width: 90% !important;
     }
   }
+@media (max-width:768px) {
+  .desc-cust{
+      width: 90% !important;
+      font-size: 16px !important;
+  }
+  .heading-cust{
+    img{
+      width: 90%;
+    }
+  }
+  // .desc-cust{
+
+  // }
+  // .images-cust{
+  //   flex-direction: column;
+  //   row-gap: 18px;
+  //   img{
+  //     width: 50% !important;
+  //   }
+  // }
+}
+
+
 //   .content-invisible{
 //     .knife{
 //         img{
