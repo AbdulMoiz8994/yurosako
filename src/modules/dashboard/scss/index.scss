@@ -1,9 +1,83 @@
-.main-page{
-    background-image: url('../../../assests/Header/Header-Image.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: max-content;
-    // height: ;
+.main-page {
+  background-image: url("../../../assests/Header/Header-Image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: max-content;
+  // height: ;
 }
+.content-section {
+  .main-logo {
+    height: 180px;
+  }
+  .text {
+    p {
+      font-size: 24px;
+      letter-spacing: 0.2px;
+      color: white;
+      padding-top: 28px;
+      padding-left: 12px;
+    }
+
+    @media (max-width:500px) {
+       .main-logo{
+        height: 125px;
+       } 
+    }
+  }
+}
+.btn-text{
+    color: black;
+    // font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    // background-color: white;
+    position: relative;
+}
+  button{
+    position: absolute;
+    top: 4px;
+    font-size: 24px;
+    z-index: 99;
+    text-transform: uppercase;
+  }  
+.btn-text .check::before{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 200px;
+    // transform: rotateY(1.1deg);
+    transform: rotate(-3deg);
+    height: 18px;
+    color: white;
+    margin: 0 auto;
+   position: relative;
+
+    // top: 20px;
+
+}
+
+.btn-text .checktwo::after{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 200px;
+    // transform: rotateY(1.1deg);
+    transform: rotate(-2deg);
+    height: 18px;
+    // margin-top: 20px;
+    color: white;
+    margin: 4px auto;
+   position: relative;
+}
+@media (max-width: 928px) {
+  .text,
+  .imgs {
+    width: 100% !important;
+  }
+  .text{
+    margin-top: 40px;
+  }
+}
+
