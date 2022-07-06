@@ -6,6 +6,8 @@ import { AboutYurosako } from "./about-yuk";
 import { Invisible } from "./invisble";
 import { Customization } from "./customization";
 import { Roadmap } from "./roadmap";
+import { Mange } from "./manga";
+import { ComingSoon } from "./comingsoon";
 import BannerCharacter from "../../assests/Header/Banner-character.webp";
 import logo from "../../assests/Header/HeaderLogo.webp";
 
@@ -44,6 +46,8 @@ export const Dashboard = () => {
         <Invisible />
         <Customization />
         <Roadmap />
+        <Mange />
+        <ComingSoon />
       </div>
     </div>
   );

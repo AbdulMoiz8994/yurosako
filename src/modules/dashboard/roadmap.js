@@ -25,7 +25,7 @@ export const Roadmap = () => {
             <img
               src={yuroosakoface}
               alt="yuroosakoface"
-              width={"300px"}
+              width={"100%"}
               className="border-b-2 border-red-600 face"
             />
           </div>
@@ -35,16 +35,16 @@ export const Roadmap = () => {
               <a href="#first">
               <div onClick={() => setChangeIcon(!changeicon)}>
                 {changeicon ? (
-                  <img src={EmptyCircle} alt="EmptyCircle" width={"60px"} />
+                  <img src={EmptyCircle} alt="EmptyCircle" width={"80px"} />
                 ) : (
-                  <img src={FillCircle} alt="FillCircle" width={"60px"} />
+                  <img src={FillCircle} alt="FillCircle" width={"80px"} />
                 )}
               </div>
               </a>
               {/* </button> */}
-              <img src={EmptyCircle} alt="EmptyCircle" width={"60px"} />
-              <img src={EmptyCircle} alt="EmptyCircle" width={"60px"} />
-              <img src={EmptyCircle} alt="EmptyCircle" width={"60px"} />
+              <img src={EmptyCircle} alt="EmptyCircle" width={"80px"} />
+              <img src={EmptyCircle} alt="EmptyCircle" width={"80px"} />
+              <img src={EmptyCircle} alt="EmptyCircle" width={"80px"} />
 
               <img src={EmptyCircle} alt="EmptyCircle" width={"60px"} />
               <a href="#last">
@@ -58,7 +58,7 @@ export const Roadmap = () => {
               </a>
             </div>
             <div className="contents-roadmap ">
-              <div className="desc-roadmap-carosal w-full">
+              <div className="desc-roadmap-carosal w-full mb-10">
                 <a id="first"></a>
                 <h1 className="text-white">
                   {" "}
@@ -71,7 +71,7 @@ export const Roadmap = () => {
                   decide the rest!.
                 </p>
               </div>
-              <div className="desc-roadmap-carosal">
+              <div className="desc-roadmap-carosal mb-10">
                 <h1 className="text-white">
                   {" "}
                   <span> 02.</span> Merchandise:
@@ -85,7 +85,7 @@ export const Roadmap = () => {
                   possible.
                 </p>
               </div>
-              <div className="desc-roadmap-carosal">
+              <div className="desc-roadmap-carosal mb-10">
                 <h1 className="text-white">
                   {" "}
                   <span> 03.</span> Physical masks:
@@ -98,7 +98,7 @@ export const Roadmap = () => {
                   and breathing.
                 </p>
               </div>
-              <div className="desc-roadmap-carosal">
+              <div className="desc-roadmap-carosal mb-10">
                 <h1 className="text-white">
                   {" "}
                   <span> 04.</span> Physical and digital artworks:
@@ -109,7 +109,7 @@ export const Roadmap = () => {
                   quantities.
                 </p>
               </div>
-              <div className="desc-roadmap-carosal">
+              <div className="desc-roadmap-carosal mb-10">
                 <h1 className="text-white">
                   {" "}
                   <span> 05.</span> Collectibles and Figurines:
@@ -126,7 +126,7 @@ export const Roadmap = () => {
                 </ul>
               </div>
 
-              <div className="desc-roadmap-carosal">
+              <div className="desc-roadmap-carosal mb-10">
                 <a id="last"></a>
                 <h1 className="text-white">
                   {" "}

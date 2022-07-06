@@ -15,9 +15,9 @@ export const Customization = () => {
             Release your creativity and customize your favorite look of Yurosako
           </p>
         </div>
-        <div className="images-cust flex justify-center flex-wrap gap-x-8 items-center my-5">
-        <img src={ladyNFT} alt="ladyNFT" width={"300px"} />
-        <img src={multiNFT} alt="multiNFT" width={"300px"} />
+        <div className="images-cust flex justify-between flex-wrap w-4/5 mx-auto items-center my-5">
+        <img src={ladyNFT} alt="ladyNFT" width={"50%"} />
+        <img src={multiNFT} alt="multiNFT" width={"50%"} />
         </div>
       </div>
     </div>
