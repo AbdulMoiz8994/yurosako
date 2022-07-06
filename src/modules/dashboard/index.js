@@ -8,6 +8,7 @@ import { Customization } from "./customization";
 import { Roadmap } from "./roadmap";
 import { Mange } from "./manga";
 import { ComingSoon } from "./comingsoon";
+import { Coretaam } from "./coretaam";
 import BannerCharacter from "../../assests/Header/Banner-character.webp";
 import logo from "../../assests/Header/HeaderLogo.webp";
 
@@ -48,6 +49,7 @@ export const Dashboard = () => {
         <Roadmap />
         <Mange />
         <ComingSoon />
+        <Coretaam />
       </div>
     </div>
   );
