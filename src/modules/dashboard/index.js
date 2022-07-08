@@ -9,6 +9,7 @@ import { Roadmap } from "./roadmap";
 import { Mange } from "./manga";
 import { ComingSoon } from "./comingsoon";
 import { Coretaam } from "./coretaam";
+import { Carosal } from "./carosal";
 import { CommunitySection } from "./community";
 import BannerCharacter from "../../assests/Header/Banner-character.webp";
 import logo from "../../assests/Header/HeaderLogo.webp";
@@ -43,7 +44,7 @@ export const Dashboard = () => {
       <div className="yursako">
         {/* <div className="yur-img"></div> */}
         <AboutYurosako />
-
+        <Carosal initialIndex={3} />
         {/* Carosal Section */}
         <Invisible />
         <Customization />

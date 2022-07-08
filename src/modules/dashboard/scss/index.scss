@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+// @font-face {
+//   font-family: regularMono;
+//   src: url('../../../assests/Fonts/IBMPlexMono-Regular.ttf'), 
+//   url('../../../assests/Fonts/IBMPlexMono-Bold.ttf');
+// }
 .main-page {
   background-image: url("../../../assests/Header/Header-Image.jpg");
   background-position: center;
@@ -18,6 +24,8 @@
       color: white;
       padding-top: 28px;
       padding-left: 12px;
+      // font-family: regularMono !important;
+      font-family: 'IBM Plex Mono', monospace !important;
     }
 
     .imgs img {
@@ -257,11 +265,11 @@ button {
   .mango-poster {
     width: 40%;
   }
-  .mango-poster {
-    img {
-      // margin-left: auto;
-    }
-  }
+  // .mango-poster {
+  //   img {
+  //     // margin-left: auto;
+  //   }
+  // }
   .volumne {
     span {
       color: red;

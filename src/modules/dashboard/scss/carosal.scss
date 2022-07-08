@@ -1,0 +1,134 @@
+.divs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background-color: #00008b;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 4em;
+}
+.carousel {
+    background: #FAFAFA;
+    img{
+      // width: 800px;
+    }
+  }
+  
+  // .carousel-cell {
+  //   width: 66%;
+  //   height: 200px;
+  //   margin-right: 10px;
+  //   background: #8C8;
+  //   border-radius: 5px;
+  //   counter-increment: carousel-cell;
+  // }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  .flickity-viewport{
+    background-color: black !important;
+  }
+  .flickity-slider{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 14px;
+    img{
+      width: 500 !important;
+      padding: 0px 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .flickity-button-icon {
+    fill: #333 !important;
+  }
+  .flickity-prev-next-button.previous {
+    // left: 10px;
+    display: none !important;
+  }
+  .flickity-prev-next-button.next {
+    // right: 10px;
+     display: none !important;
+  }
+  /* right to left */
+  // .flickity-rtl .flickity-prev-next-button.previous {
+  //   left: auto;
+  //   right: 10px;
+  // }
+  // .flickity-rtl .flickity-prev-next-button.next {
+  //   right: auto;
+  //   left: 10px;
+  // }
+  
+  .flickity-prev-next-button .flickity-button-icon {
+    position: absolute !important;
+    left: 20% !important;
+    top: 20% !important;
+    width: 60% !important;
+    height: 60% !important;
+  }
+  
+  /* ---- page dots ---- */
+  
+  .flickity-page-dots {
+    position: absolute !important;
+    width: 100% !important;
+    bottom: -25px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    text-align: center !important;
+    line-height: 1 !important;
+  }
+  
+  .flickity-rtl .flickity-page-dots {
+    direction: rtl !important;
+  }
+  
+  .flickity-page-dot  {
+    display: inline-block !important;
+    // width: 10px !important;
+    // height: 10px !important;
+    margin: 0 8px !important;
+    width: 30px !important;
+    height: 8px !important;
+    border-radius: 8px !important;
+    background: #333 !important;
+    // border-radius: 50% !important;
+    opacity: 0.25 !important;
+    cursor: pointer !important;
+    @media (max-width:425px) {
+      width: 20px !important;  
+      margin: 0 4px !important;
+    }
+  }
+  .flickity-page-dots button{
+    // margin: 10px 40px !important;
+    position: relative !important;
+  }
+  .flickity-page-dot .dot.is-selected, .flickity-page-dot.is-selected {
+    opacity: 1 !important;
+    width: 30px !important;
+    height: 8px !important;
+    border-radius: 8px !important;
+    background-color: red !important;
+    @media (max-width:425px) {
+      width: 20px !important; 
+    }
+  }
+  .flickity-page-dot:focus{
+    box-shadow: none !important;
+  }
+  
+  
