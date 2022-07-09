@@ -47,7 +47,7 @@ export const Mange = () => {
               </p>
               <p className="date">8/7/2022</p>
             </div>
-            <div className="btn-text table my-6 manga-btn">
+            <div className="manga-btn btn-text table my-6">
               <div className="check"></div>
               <Button value={"Priview"} />
               <div className="checktwo"></div>

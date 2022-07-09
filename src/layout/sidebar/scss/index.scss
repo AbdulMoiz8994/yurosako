@@ -2,14 +2,17 @@
     background-color: black;
     color: white;
     height: 100%;
-    position: relative;
-    button{
-        
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        width: 100%;
-        padding: 10px 20px;
+    // position: relative;
+    .cross-btn{
+        position: relative !important;
+        // display: flex;
+        text-align: end;
+        // justify-content: flex-end;
+        // align-items: flex-end;
+        // width: 100%;
+        padding: 0px 16px;
+        top: 0px !important;
+
         svg{
         font-size: 48px !important;
         
@@ -20,8 +23,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 28px;
-    margin-top: 75px;
+    row-gap: 16px;
+    margin-top: 16px;
+    // margin-top: 75px;
     li{
         font-size: 22px;
         text-transform: uppercase;
@@ -47,6 +51,12 @@
         height: 30px;
         cursor: pointer;
     }
+}
+.sideb-btn{
+    top: 0px !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    width: 0px !important;
 }
 // .css-9mgopn-MuiDivider-root{
 //     background-color: white !important;

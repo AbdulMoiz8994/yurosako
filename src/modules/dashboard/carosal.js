@@ -82,6 +82,7 @@ export const Carosal = () => {
       // reloadOnUpdate // default false
       // static // default false
       data-flickity='{ "wrapAround": true }'
+      
     >
       <img src={check} alt="check"  />
       <img src={Tigerslayer} alt="Tigerslayer"/>

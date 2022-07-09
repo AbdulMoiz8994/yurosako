@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 // @font-face {
 //   font-family: regularMono;
-//   src: url('../../../assests/Fonts/IBMPlexMono-Regular.ttf'), 
+//   src: url('../../../assests/Fonts/IBMPlexMono-Regular.ttf'),
 //   url('../../../assests/Fonts/IBMPlexMono-Bold.ttf');
 // }
 .main-page {
@@ -25,7 +25,7 @@
       padding-top: 28px;
       padding-left: 12px;
       // font-family: regularMono !important;
-      font-family: 'IBM Plex Mono', monospace !important;
+      font-family: "IBM Plex Mono", monospace !important;
     }
 
     .imgs img {
@@ -46,43 +46,118 @@
   text-transform: uppercase;
   // background-color: white;
   position: relative;
+  width: 250px;
+  margin: 20px auto;
+  // :hover {
+  //   color: white;
+  //   // background-color: red !important;
+  //   // width: 200px;
+  // }
+}
+.btn-text:hover {
+  .check,
+  .checktwo {
+    background-color: red !important;
+    margin: -4px auto !important;
+  }
+  .checktwo {
+    margin-right: 16px !important;
+  }
+  button {
+    color: white;
+  }
+}
+.manga-btn:hover {
+  .checktwo {
+    margin-right: 6px !important;
+  }
 }
 button {
   position: absolute;
-  top: 2px;
-  font-size: 24px;
+  top: 8px;
+  font-size: 28px;
   z-index: 99;
   text-transform: uppercase;
+  width: 200px;
+  margin: 0 auto !important;
 }
-.btn-text .check::before {
-  content: "";
-  display: block;
+.btn-text .check {
   background-color: white;
   width: 200px;
-  // transform: rotateY(1.1deg);
-  transform: rotate(-3deg);
   height: 18px;
   color: white;
   margin: 0 auto;
   position: relative;
+  display: block;
+  padding: 16px 0px;
+  clip-path: polygon(0 0, 100% 0, 100% 54%, 0 100%);
+  transition: margin 0.35s ease-in-out;
 
-  // top: 20px;
+  // :hover{
+
+  // }
 }
 
-.btn-text .checktwo::after {
-  content: "";
+// .btn-text .check::after {
+//   content: "";
+//     // transform: rotateY(1.1deg);
+//   transform: rotate(-3deg) !important;
+
+// }
+// .btn-text .check:hover::before {
+//   background-color: red !important;
+//   margin: 0 auto 4px auto !important;
+// }
+
+.btn-text .checktwo {
   display: block;
   background-color: white;
   width: 200px;
-  // transform: rotateY(1.1deg);
-  transform: rotate(-2deg);
   height: 18px;
   // margin-top: 20px;
   color: white;
-  margin: 3px auto;
+  margin: -12px auto;
   position: relative;
-}
+  padding: 16px 0px;
+  transition: margin 0.35s ease-in-out;
 
+  clip-path: polygon(0 58%, 100% 0, 100% 100%, 0 100%);
+}
+// .btn-text .checktwo:hover{
+//   margin: 12px auto !important;
+// }
+
+// .btn-text .checktwo::before {
+//   content: "";
+//   // transform: rotate(-2deg);
+//    margin-left: 20px;
+
+// }
+// .btn-text .checktwo:hover::after {
+//   background-color: red !important;
+//   margin-top: 8px !important;
+// }
+.manga-btn {
+  // margin: 0 auto;
+  // margin-right: auto;
+  // margin-left: auto;
+  // display: flex !important;
+  // justify-content: flex-start !important;
+  margin-left: initial !important;
+  padding: 4px;
+  transition: margin 0.35s ease-in-out;
+
+
+  button {
+    top: 10px;
+    font-size: 28px;
+  }
+  @media (max-width: 1024px) {
+    // .manga-btn{
+    margin: 0 auto !important;
+    // }
+  }
+}
 .yursako {
   width: 100%;
 }
@@ -145,12 +220,18 @@ button {
 
 .contents-roadmap {
   height: 380px;
-  overflow-y: auto;
+  overflow-y: auto !important;
   .desc-roadmap-carosal {
+    height: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    padding-left: 16px;
     h1 {
       font-size: 32px;
       color: white;
       font-weight: 800;
+      margin: 20px 0px;
       span {
         color: red;
         padding-right: 14px;
@@ -163,9 +244,19 @@ button {
     }
   }
 }
+.swiper-slide{
+  overflow-y: auto !important;
+}
+.swiper-backface-hidden .swiper-slide::-webkit-scrollbar{
+   width: 6px !important;
+}
+.swiper-backface-hidden .swiper-slide::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: red;
+}
 .contents-roadmap::-webkit-scrollbar {
   // display: none;
-  width: 0px;
+  width: 0px !important;
 }
 .contents-roadmap {
   -ms-overflow-style: none;
@@ -360,14 +451,6 @@ button {
     display: flex;
     justify-content: center;
   }
-  .manga-btn {
-    margin: 0 auto;
-    padding: 10px;
-    button {
-      top: 10px;
-      font-size: 28px;
-    }
-  }
   .manga-text {
     order: 3;
   }
@@ -379,10 +462,10 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 12px;
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       // .team-section {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        row-gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      row-gap: 14px;
       // }
     }
   }
@@ -413,14 +496,14 @@ button {
     width: 90%;
   }
 }
-.social-icons{
-  img{
+.social-icons {
+  img {
     width: 40px;
     height: 40px;
     cursor: pointer;
   }
 }
-.copywrite{
+.copywrite {
   color: white;
   text-align: center;
 }
@@ -471,6 +554,56 @@ button {
       width: 100%;
     }
   }
+}
 
-  
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  // text-align: center;
+  font-size: 18px;
+  background: black;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide div {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+  left: 0px !important;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet{
+  // background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+}
+.swiper-pagination-bullet-active{
+  background-color: red !important;
+  width: 14px !important;
+  height: 30px !important;
+  border-radius: 12px !important;
+  margin-left: 2.5px !important;
+  border: none !important;
 }
