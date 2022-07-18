@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hamerman from "../../assests/The invincible/manhammer.webp";
 import invisibleogo from "../../assests/The invincible/The-Invincible.webp";
 import "./scss/index.scss";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const Invisible = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1800,
+      easing: "ease",
+      once: false,
+    });
+  });
   return (
     <div className="content-invisible py-16">
-      <div className="knife">
-        <img src={hamerman} alt="bigknife" />
+      <div className="knife" data-aos="fade-down" data-aos-delay="800">
+        <img src={hamerman} alt="bigknife"  />
       </div>
-      <div className="desc">
+      <div className="desc" data-aos="fade-right" data-aos-delay="800">
         {/* <h1></h1> */}
         <img src={invisibleogo} alt="Yurosako" />
         <div className="invi-desc">

@@ -1,29 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 // import Slider from "react-slick";
 // import Carousel from "react-multi-carousel";
 // import "react-multi-carousel/lib/styles.css";
 import check from "../../assests/Core Team/Snake-Slayer.png";
-import Tigerslayer from "../../assests/Core Team/Tiger-slayer.png"
-import VolcanoSako from  "../../assests/Core Team/Volcano-Sako.png"
+import Tigerslayer from "../../assests/Core Team/Tiger-slayer.png";
+import VolcanoSako from "../../assests/Core Team/Volcano-Sako.png";
 import ladyNFT from "../../assests/Customization/ladyNFT.webp";
 
 // import Carousel from 'react-elastic-carousel';
-import Flickity from 'react-flickity-component'
+import Flickity from "react-flickity-component";
 import "flickity/dist/flickity.css";
 import "./scss/carosal.scss";
-
-
-
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const Carosal = () => {
-    // ('.main-carousel').flickity({
-    //     // options
-    //     cellAlign: 'left',
-    //     wrapAround: true,
-    //     freeScroll: true,
-    //   });
-    
+  // ('.main-carousel').flickity({
+  //     // options
+  //     cellAlign: 'left',
+  //     wrapAround: true,
+  //     freeScroll: true,
+  //   });
+
   //   const settings = {
   //     className: "center",
   //       centerMode: true,
@@ -56,11 +54,16 @@ export const Carosal = () => {
   //   };
   //   const colors = ["red", "green", "blue", "orange", "yellow", "white"];
 
-
+  useEffect(() => {
+    Aos.init({
+      duration: 3000,
+      easing: "ease",
+      once: false,
+    });
+  });
   const flickityOptions = {
-    initialIndex: 1
-}
-
+    initialIndex: 1,
+  };
 
   return (
     <div className="">
@@ -75,27 +78,26 @@ export const Carosal = () => {
         <div className="carousel-cell"></div>
       </div> */}
       <Flickity
-      className={'carousel bg-black'} // default ''
-      elementType={'div'} // default 'div'
-      options={flickityOptions} // takes flickity options {}
-      // disableImagesLoaded={false} // default false
-      // reloadOnUpdate // default false
-      // static // default false
-      data-flickity='{ "wrapAround": true }'
-      
-    >
-      <img src={check} alt="check"  />
-      <img src={Tigerslayer} alt="Tigerslayer"/>
-      <img src={VolcanoSako} alt="VolcanoSako"/>
-      <img src={ladyNFT} alt="ladyNFT" width={500} /> 
-      <img src={check} alt="check"  />
-      <img src={Tigerslayer} alt="Tigerslayer"/>
-      <img src={VolcanoSako} alt="VolcanoSako"/>
-      <img src={ladyNFT} alt="ladyNFT" width={500} />
-      <img src={check} alt="check"  />
-      <img src={Tigerslayer} alt="Tigerslayer"/>
-      {/* <img src={check} alt="check"/> */}
-    </Flickity>
+        className={"carousel bg-black"} // default ''
+        elementType={"div"} // default 'div'
+        options={flickityOptions} // takes flickity options {}
+        // disableImagesLoaded={false} // default false
+        // reloadOnUpdate // default false
+        // static // default false
+        data-flickity='{ "wrapAround": true }'
+      >
+        <img src={check} alt="check" data-aos="fade-down" />
+        <img src={Tigerslayer} alt="Tigerslayer" data-aos="fade-down" />
+        <img src={VolcanoSako} alt="VolcanoSako" data-aos="fade-down" />
+        <img src={ladyNFT} alt="ladyNFT" width={500} data-aos="fade-down" />
+        <img src={check} alt="check" data-aos="fade-down" />
+        <img src={Tigerslayer} alt="Tigerslayer" data-aos="fade-down" />
+        <img src={VolcanoSako} alt="VolcanoSako" data-aos="fade-down" />
+        <img src={ladyNFT} alt="ladyNFT" width={500} />
+        <img src={check} alt="check" />
+        <img src={Tigerslayer} alt="Tigerslayer" />
+        {/* <img src={check} alt="check"/> */}
+      </Flickity>
     </div>
   );
 };

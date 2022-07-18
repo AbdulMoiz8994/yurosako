@@ -11,6 +11,7 @@ import instagram from "../../assests/Social media/Instagram2.png";
 import discord from "../../assests/Social media/Discord2.png";
 import "./scss/index.scss";
 
+
 export const Sidebar = () => {
   const [state, setState] = React.useState({
     right: false,
@@ -61,6 +62,9 @@ export const Sidebar = () => {
   //       </List>
   //     </Box>
   //   );
+
+ 
+
 
   return (
     <div>

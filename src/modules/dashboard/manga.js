@@ -1,23 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./scss/index.scss";
 import Manga from "../../assests/Manga/Manga.webp";
 import MangaPoster from "../../assests/Manga/Manga-Poster.webp";
 import { Button } from "../../components/button";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export const Mange = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+      easing: "ease",
+      once: false,
+    });
+  });
   return (
     <div className="manga-section py-4 ">
-      <div className="heading-manga flex items-center justify-center w-full">
+      <div
+        className="heading-manga flex items-center justify-center w-full"
+        data-aos="fade-right"
+        data-aos-delay="300"
+      >
         <img src={Manga} alt="Manga" width={"50%"} />
       </div>
-      <div className="desc-manga text-center uppercase text-white text-2xl w-1/2 mx-auto">
+      <div
+        className="desc-manga text-center uppercase text-white text-2xl w-1/2 mx-auto"
+        data-aos="flip-left"
+      >
         <p className="">
           If you want to read more about our yurosako Roadmap Please Click our
           Article
         </p>
       </div>
       <div className="manga-desc flex justify-center mt-6 gap-y-3 gap-x-8  w-4/5 mx-auto">
-        <div className="mango-poster">
+        <div className="mango-poster" data-aos="zoom-in-down">
           <img
             src={MangaPoster}
             alt="MangaPoster"
@@ -25,7 +41,12 @@ export const Mange = () => {
             className="border-b-2 border-red-600 face"
           />
         </div>
-        <div className="menu-manga flex    gap-4">
+        <div
+          className="menu-manga flex    gap-4"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <div className="">
             <h1>
               <span> S</span>AVIOR OF SAKO WORLD
@@ -38,8 +59,7 @@ export const Mange = () => {
               Intelligence Agency (PSIA) headquarters, they were worried about a
               machine that had gone missing, purportedly stolen by a criminal
               and he was using it to go back in time as well as the future to
-              live his fantasies, rape, kill and wreak havoc on the
-              communities.
+              live his fantasies, rape, kill and wreak havoc on the communities.
             </p>
             <div className="volumne gap-x-4 text-white flex items-center justify-start">
               <p className="text-xl uppercase font-bold">

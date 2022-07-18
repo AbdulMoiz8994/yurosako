@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./scss/index.scss";
 import bigknife from "../../assests/Yurosako/bigknife.webp";
 import Yurosako from "../../assests/Yurosako/Yurosako.webp";
+import Aos from "aos";
+import "aos/dist/aos.css";
 // import { ReadMoreToggler } from 'read-more-read-less-toggler'
 
 export const AboutYurosako = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+      easing: "ease",
+      once: false,
+    });
+  });
   return (
     <div className="content-yuros py-16">
-      <div className="knife">
+      <div className="knife"  data-aos="fade-down" data-aos-delay="200">
         <img src={bigknife} alt="bigknife" />
       </div>
-      <div className="desc">
+      <div className="desc" >
         {/* <h1></h1> */}
-        <img src={Yurosako} alt="Yurosako" />
-        <div>
+        <img src={Yurosako} alt="Yurosako" data-aos="fade-down" data-aos-delay="200"  />
+        <div data-aos="fade-down" data-aos-delay="200">
           <p>
             Yurosako follows the journey of 9,000 individuals that got sucked
             into the Sake world and received some special powers and weapons
