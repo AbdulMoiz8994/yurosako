@@ -573,6 +573,9 @@ font-weight: bolder;
     display: none;
   }
 }
+.mobileCustomDes{
+  display: none;
+}
 @media (max-width: 768px) {
   .desc-cust,
   .desc-roadmap,
@@ -610,6 +613,12 @@ font-weight: bolder;
     img {
       width: 100%;
     }
+  }
+  .webCustomDesign{
+    display: none;
+  }
+  .mobileCustomDes{
+    display: block;
   }
 }
 
